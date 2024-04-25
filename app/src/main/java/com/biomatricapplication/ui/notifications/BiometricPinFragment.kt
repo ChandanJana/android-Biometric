@@ -1,11 +1,18 @@
 package com.biomatricapplication.ui.notifications
 
+import android.app.Activity
+import android.content.Intent
+import android.hardware.biometrics.BiometricManager.Authenticators.BIOMETRIC_WEAK
+import android.os.Build
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
@@ -22,6 +29,8 @@ class BiometricPinFragment : Fragment() {
     private lateinit var biometricAndPinViewModel: BiometricPinViewModel
     private var isBiometricEnabled = false
     private var isBiometricPresent = false
+    private val authenticators = BIOMETRIC_WEAK
+    private lateinit var enrollBiometricRequestLauncher: ActivityResultLauncher<Intent>
 
     private var _binding: FragmentBiometricPinBinding? = null
 
@@ -36,7 +45,15 @@ class BiometricPinFragment : Fragment() {
     ): View {
         biometricAndPinViewModel =
             ViewModelProvider(this).get(BiometricPinViewModel::class.java)
-
+        // Initialize a launcher for requesting user to enroll in biometric
+        enrollBiometricRequestLauncher =
+            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+                if (it.resultCode == Activity.RESULT_OK) {
+                    showBiometricPrompt()
+                } else {
+                    Log.d(TAG, "Failed to enroll in biometric")
+                }
+            }
         _binding = FragmentBiometricPinBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
@@ -77,6 +94,20 @@ class BiometricPinFragment : Fragment() {
                 Log.d(TAG, "he user hasn't associated any biometric credentials with their account.")
                 isBiometricEnabled = false
                 isBiometricPresent = true
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                    Log.d(TAG, "He user TRUE")
+                    enrollBiometricRequestLauncher.launch(
+                        Intent(Settings.ACTION_BIOMETRIC_ENROLL).apply {
+                            putExtra(
+                                Settings.EXTRA_BIOMETRIC_AUTHENTICATORS_ALLOWED,
+                                authenticators
+                            )
+                        }
+                    )
+                } else {
+                    Log.d(TAG, "He user FALSE")
+                    Log.d(TAG, "Could not request biometric enrollment in API level < 30")
+                }
             }
         }
     }

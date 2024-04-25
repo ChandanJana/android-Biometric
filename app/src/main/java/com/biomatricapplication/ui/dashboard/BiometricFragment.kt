@@ -1,11 +1,20 @@
 package com.biomatricapplication.ui.dashboard
 
+import android.app.Activity
+import android.content.Intent
+import android.hardware.biometrics.BiometricManager.Authenticators.BIOMETRIC_STRONG
+import android.hardware.biometrics.BiometricManager.Authenticators.BIOMETRIC_WEAK
+import android.hardware.biometrics.BiometricManager.Authenticators.DEVICE_CREDENTIAL
+import android.os.Build
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
@@ -28,6 +37,9 @@ class BiometricFragment : Fragment() {
     private lateinit var biometricViewModel: BiometricViewModel
     private var isBiometricEnabled = false
     private var isBiometricPresent = false
+    private val authenticators = BIOMETRIC_WEAK
+    private lateinit var enrollBiometricRequestLauncher: ActivityResultLauncher<Intent>
+    private lateinit var biometricPrompt: BiometricPrompt
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,6 +48,16 @@ class BiometricFragment : Fragment() {
     ): View {
         biometricViewModel =
             ViewModelProvider(this).get(BiometricViewModel::class.java)
+
+        // Initialize a launcher for requesting user to enroll in biometric
+        enrollBiometricRequestLauncher =
+            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+                if (it.resultCode == Activity.RESULT_OK) {
+                    showBiometricPrompt()
+                } else {
+                    Log.d(TAG, "Failed to enroll in biometric")
+                }
+            }
 
         _binding = FragmentBiometricBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -46,7 +68,7 @@ class BiometricFragment : Fragment() {
         }
         checkIfBiometricIsSupported()
         if (isBiometricEnabled) {
-            showBiometricPrompt();
+            showBiometricPrompt()
         } else if (isBiometricPresent) {
             biometricViewModel.setText(getString(R.string.biometric_not_enabled));
         } else {
@@ -73,16 +95,30 @@ class BiometricFragment : Fragment() {
                 isBiometricPresent = false
             }
             BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED -> {
-                Log.d(TAG, "he user hasn't associated any biometric credentials with their account.")
+                Log.d(TAG, "He user hasn't associated any biometric credentials with their account.")
                 isBiometricEnabled = false
                 isBiometricPresent = true
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                    Log.d(TAG, "He user TRUE")
+                    enrollBiometricRequestLauncher.launch(
+                        Intent(Settings.ACTION_BIOMETRIC_ENROLL).apply {
+                            putExtra(
+                                Settings.EXTRA_BIOMETRIC_AUTHENTICATORS_ALLOWED,
+                                authenticators
+                            )
+                        }
+                    )
+                } else {
+                    Log.d(TAG, "He user FALSE")
+                    Log.d(TAG, "Could not request biometric enrollment in API level < 30")
+                }
             }
         }
     }
 
     private fun showBiometricPrompt() {
         val executor = ContextCompat.getMainExecutor(requireContext())
-        val biometricPrompt = BiometricPrompt(this, executor,
+        biometricPrompt = BiometricPrompt(this, executor,
             object : BiometricPrompt.AuthenticationCallback() {
                 override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {
                     super.onAuthenticationError(errorCode, errString)
