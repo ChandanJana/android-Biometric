@@ -1,0 +1,19 @@
+
+|
+Lapp/src/main/java/com/biomatricapplication/ui/dashboard/BiometricFragment.kt,5\a\5a179d60fe5b708e56fa494d6d21ba63215e8d65
+ƒ
+Sapp/src/main/java/com/biomatricapplication/ui/notifications/BiometricPinFragment.kt,8\a\8a612c662723999aead15108288aaf5225886c57
+j
+:app/src/main/java/com/biomatricapplication/MainActivity.kt,c\5\c5ee67afdb3d02aba093cd4410f2ea2649eeab7d
+s
+Capp/src/main/java/com/biomatricapplication/ui/home/HomeViewModel.kt,a\c\ace07de858598a2a59efad4de0834bf8dfed6da7
+r
+Bapp/src/main/java/com/biomatricapplication/ui/home/HomeFragment.kt,a\3\a390312f5fcb23d1da263e1b933d738dc2275b96
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+D
+app/build.gradle.kts,d\2\d2a4383452aad84a18429a5844d31330a012a9e6
+}
+Mapp/src/main/java/com/biomatricapplication/ui/dashboard/BiometricViewModel.kt,0\8\0822e34b3fb158a29a4f1199a88830bb824ad28c
+„
+Tapp/src/main/java/com/biomatricapplication/ui/notifications/BiometricPinViewModel.kt,9\1\9105773c08d02f91ec5c9975dc70fad8ca17fe27
