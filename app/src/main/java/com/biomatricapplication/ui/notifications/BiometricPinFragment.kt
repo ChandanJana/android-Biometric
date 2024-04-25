@@ -34,7 +34,7 @@ class BiometricPinFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val biometricAndPinViewModel =
+        biometricAndPinViewModel =
             ViewModelProvider(this).get(BiometricPinViewModel::class.java)
 
         _binding = FragmentBiometricPinBinding.inflate(inflater, container, false)
