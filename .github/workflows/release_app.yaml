@@ -26,25 +26,18 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build with Gradle
-        run: |
-          ./gradlew assembleRelease \
-            -Pandroid.injected.signing.store.file=$KEYSTORE_FILE \
-            -Pandroid.injected.signing.store.password=$KEYSTORE_PASSWORD \
-            -Pandroid.injected.signing.key.alias=$SIGNING_KEY_ALIAS \
-            -Pandroid.injected.signing.key.password=$SIGNING_KEY_PASSWORD
-        env:
-          RELEASE_KEYSTORE: ${{ secrets.KEYSTORE_FILE }}
-          STORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
+        run: ./gradlew assembleRelease
+
+      - name: Rename APK
+        run: mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/Biometric-V_${{ steps.version.outputs.versionName }}.apk
 
       - name: Move APK to artifacts
         run: |
           mkdir -p artifacts
-          mv app/build/outputs/apk/release/app-release.apk artifacts/
+          mv app/build/outputs/apk/release/Biometric-V_${{ steps.version.outputs.versionName }}.apk artifacts/
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: my-app-release
-          path: artifacts/app-release.apk
+          path: artifacts/Biometric-V_${{ steps.version.outputs.versionName }}.apk
