@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.biomatricapplication.app-mergeReleaseResources-48:/layout/fragment_biometric_pin.xml",
+        "source": "com.biomatricapplication.app-main-50:/layout/fragment_biometric_pin.xml"
+    },
+    {
+        "merged": "com.biomatricapplication.app-mergeReleaseResources-48:/layout/fragment_home.xml",
+        "source": "com.biomatricapplication.app-main-50:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.biomatricapplication.app-mergeReleaseResources-48:/layout/activity_main.xml",
+        "source": "com.biomatricapplication.app-main-50:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.biomatricapplication.app-mergeReleaseResources-48:/layout/fragment_biometric.xml",
+        "source": "com.biomatricapplication.app-main-50:/layout/fragment_biometric.xml"
+    }
+]
