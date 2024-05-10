@@ -28,3 +28,9 @@ K
 .github/workflows/push.yaml,3\0\3037b3df059d9203f6aaa94cf211afd2020c627c
 >
 app/.gitignore,5\1\51e1c5d383dfaa35e0e7e5873a0a99355a86880f
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
+A
+app/playstore.jks,2\f\2fe6aa49106dd35626064623b4a44962acbb3b34
+R
+".github/workflows/release_app.yaml,b\9\b9e00d5c4d35fe8923bbca3c4888827adcd0706b
