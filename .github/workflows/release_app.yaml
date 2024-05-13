@@ -70,14 +70,14 @@ jobs:
       - name: Run Instrumentation
         run: echo Unit Test
 
-#      - name: Run tests
-#        run: ./gradlew test
-#
-#      - name: Upload test report
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: unit_test_report
-#          path: app/build/reports/tests/testDebugUnitTest/
+      - name: Run tests
+        run: ./gradlew test
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v4
+        with:
+          name: unit_test_report
+          path: app/build/reports/tests/testDebugUnitTest/
 
   instrumentation-test:
     needs: [ unit-test ]
@@ -99,17 +99,17 @@ jobs:
       - name: Run Instrumentation
         run: echo Run Instrumentation
 
-#      - name: Run espresso tests
-#        uses: reactivecircus/android-emulator-runner@v2
-#        with:
-#          api-level: 29
-#          script: ./gradlew connectedCheck
-#
-#      - name: Upload test report
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: instrumentation_test_report
-#          path: app/build/reports/androidTests/connected/
+      - name: Run espresso tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          script: ./gradlew connectedCheck
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v4
+        with:
+          name: instrumentation_test_report
+          path: app/build/reports/androidTests/connected/
 
   static-code-analysis:
     needs: [ instrumentation-test ]
@@ -133,7 +133,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   generate-apk:
-    #needs: [ unit-test ]
+    needs: [ static-code-analysis ]
     runs-on: ubuntu-latest
     name: ⚙️ Generate APK
     steps:
