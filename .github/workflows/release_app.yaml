@@ -28,8 +28,9 @@ jobs:
 
       # Allow permissions to make gradle executable - This can removed by adding the gradlew file permission
       # directly into the repository using `git update-index --chmod=+x gradlew`
-      # - name: Make gradle executable
-      #  run: chmod +x ./gradlew
+
+      - name: Grant execute permissions to Gradle wrapper
+        run: chmod +x ./gradlew
 
       # Execute gradle build command with stacktrace flag
       - name: Build with gradle
