@@ -1,0 +1,139 @@
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\java\com\biomatricapplication\ui\dashboard\BiometricFragment.kt:40: Warning: Field requires API level 30 (current min is 24): android.hardware.biometrics.BiometricManager.Authenticators#BIOMETRIC_WEAK [InlinedApi]
+    private val authenticators = BIOMETRIC_WEAK
+                                 ~~~~~~~~~~~~~~
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\java\com\biomatricapplication\ui\notifications\BiometricPinFragment.kt:32: Warning: Field requires API level 30 (current min is 24): android.hardware.biometrics.BiometricManager.Authenticators#BIOMETRIC_WEAK [InlinedApi]
+    private val authenticators = BIOMETRIC_WEAK
+                                 ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "InlinedApi":
+   This check scans through all the Android API field references in the
+   application and flags certain constants, such as static final integers and
+   Strings, which were introduced in later versions. These will actually be
+   copied into the class files rather than being referenced, which means that
+   the value is available even when running on older devices. In some cases
+   that's fine, and in other cases it can result in a runtime crash or
+   incorrect behavior. It depends on the context, so consider the code
+   carefully and decide whether it's safe and can be suppressed or whether the
+   code needs to be guarded.
+
+   If you really want to use this API and don't need to support older devices
+   just set the minSdkVersion in your build.gradle or AndroidManifest.xml
+   files.
+
+   If your code is deliberately accessing newer APIs, and you have ensured
+   (e.g. with conditional execution) that this code will only ever be called
+   on a supported platform, then you can annotate your class or method with
+   the @TargetApi annotation specifying the local minimum SDK to apply, such
+   as @TargetApi(11), such that this check considers 11 rather than your
+   manifest file's minimum SDK as the required API level.
+
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\java\com\biomatricapplication\MainActivity.kt:35: Warning: The indentation string here is different from on the previous line (" " vs \t) [SuspiciousIndentation]
+  NavigationUI.setupWithNavController(navView, navController,false)
+~~
+    C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\java\com\biomatricapplication\MainActivity.kt:34: Previous line indentation here
+
+   Explanation for issues of type "SuspiciousIndentation":
+   This check looks for cases where the indentation suggests a grouping that
+   isn't actually there in the code. A common example of this would be
+   something like
+   if (column > width)
+       line++
+       column = 0
+   Here, the column = 0 line will be executed every single time, not just if
+   the condition is true.
+
+   Available options:
+
+   **always-run** (default is false):
+   Whether this check should be included while editing.
+
+   While you're editing, it's common to have a temporary situation where you have suspicious indentation scenarios -- e.g. you start typing an `if` statement on the line above something you want to make conditional, and you haven't indented it yet. It can be distracting and misleading to suddenly have both statements light up as errors. Therefore, lint will avoid including this check when running on the fly in the editor, unless it looks like the file has not been recently edited. With this option, you can turn it on in all cases.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="SuspiciousIndentation">
+           <option name="always-run" value="false" />
+       </issue>
+   </lint>
+   ```
+
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\res\layout\activity_main.xml:21: Warning: Replace the <fragment> tag with FragmentContainerView. [FragmentTagUsage from androidx.fragment]
+    <fragment
+     ~~~~~~~~
+
+   Explanation for issues of type "FragmentTagUsage":
+   FragmentContainerView replaces the <fragment> tag as the preferred         
+          way of adding fragments via XML. Unlike the <fragment> tag,
+   FragmentContainerView                 uses a normal FragmentTransaction
+   under the hood to add the initial fragment,                 allowing
+   further FragmentTransaction operations on the FragmentContainerView        
+           and providing a consistent timing for lifecycle events.
+
+   https://developer.android.com/reference/androidx/fragment/app/FragmentContainerView.html
+
+   Vendor: Android Open Source Project
+   Identifier: androidx.fragment
+   Feedback: https://issuetracker.google.com/issues/new?component=460964
+
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:24: Warning: Redundant label can be removed [RedundantLabel]
+            android:label="@string/app_name">
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RedundantLabel":
+   When an activity does not have a label attribute, it will use the one from
+   the application tag. Since the application has already specified the same
+   label, the label on this activity can be omitted.
+
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\build.gradle.kts:68: Warning: A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.13.1 [GradleDependency]
+    implementation("androidx.core:core-ktx:1.12.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\build.gradle.kts:70: Warning: A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0 [GradleDependency]
+    implementation("com.google.android.material:material:1.11.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\build.gradle.kts:72: Warning: A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.6.1 is available: 2.7.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\build.gradle.kts:73: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.6.1 is available: 2.7.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\build.gradle.kts:74: Warning: A newer version of androidx.navigation:navigation-fragment-ktx than 2.6.0 is available: 2.7.7 [GradleDependency]
+    implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\build.gradle.kts:75: Warning: A newer version of androidx.navigation:navigation-ui-ktx than 2.6.0 is available: 2.7.7 [GradleDependency]
+    implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\build.gradle.kts:76: Warning: A newer version of androidx.biometric:biometric than 1.0.1 is available: 1.1.0 [GradleDependency]
+    implementation ("androidx.biometric:biometric:1.0.1")
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\res\values\dimens.xml:3: Warning: The resource R.dimen.activity_horizontal_margin appears to be unused [UnusedResources]
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\res\values\dimens.xml:4: Warning: The resource R.dimen.activity_vertical_margin appears to be unused [UnusedResources]
+    <dimen name="activity_vertical_margin">16dp</dimen>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+0 errors, 14 warnings
