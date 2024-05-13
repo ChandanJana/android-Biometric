@@ -1,4 +1,4 @@
-#Fri May 10 20:09:24 IST 2024
+#Mon May 13 10:55:39 IST 2024
 base.0=C\:\\Users\\Chandan.Jana\\AndroidStudioProjects\\android-Biometric\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
