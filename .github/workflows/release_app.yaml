@@ -79,7 +79,7 @@ jobs:
   instrumentation-test:
     needs: [ unit-test ]
     runs-on: macos-latest
-    name: 🧪 Instrumentation Tests
+    name: 🤖 Instrumentation Tests
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
@@ -94,9 +94,15 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Run espresso tests
+<<<<<<< HEAD
         uses: reactivecircus/android-emulator-runner@v4
         with:
           api-level: 24
+=======
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+>>>>>>> 4bb4fac (Instrumentation test added)
           script: ./gradlew connectedCheck
 
       - name: Upload test report
