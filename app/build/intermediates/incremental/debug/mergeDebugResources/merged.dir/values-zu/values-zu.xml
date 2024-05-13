@@ -47,6 +47,7 @@
     <string name="character_counter_content_description">Izinhlamvu ezifakiwe ezingu-%1$d zokungu-%2$d</string>
     <string name="character_counter_overflowed_content_description">Umkhawulo wezinhlamvu udlule u-%1$d kokungu-%2$d</string>
     <string name="clear_text_end_icon_content_description">Sula umbhalo</string>
+    <string name="common_google_play_services_unknown_issue">%1$s inenkinga ngamasevisi e-Google Play. Sicela uzame futhi.</string>
     <string msgid="4296851028928624518" name="confirm_device_credential_password">"Sebenzisa iphasiwedi"</string>
     <string msgid="7497355367608150274" name="default_error_msg">"Iphutha elingaziwe"</string>
     <string name="error_icon_content_description">Iphutha</string>

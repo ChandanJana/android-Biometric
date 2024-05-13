@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "298242984637",
+    "project_id": "biomatrictest-f7ea5",
+    "storage_bucket": "biomatrictest-f7ea5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298242984637:android:dc3754632be036d95405d4",
+        "android_client_info": {
+          "package_name": "com.biomatricapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMdC_srWQ_tdhBqwy3TZSnZmfLuBgZPHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

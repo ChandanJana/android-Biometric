@@ -47,6 +47,7 @@
     <string name="character_counter_content_description">Въведени знаци: %1$d от %2$d</string>
     <string name="character_counter_overflowed_content_description">Максималният брой знаци е надхвърлен с(ъс) %1$d от %2$d</string>
     <string name="clear_text_end_icon_content_description">Изчистване на текста</string>
+    <string name="common_google_play_services_unknown_issue">%1$s има проблеми с услугите за Google Play. Моля, опитайте отново.</string>
     <string msgid="4296851028928624518" name="confirm_device_credential_password">"Използване на парола"</string>
     <string msgid="7497355367608150274" name="default_error_msg">"Неизвестна грешка"</string>
     <string name="error_icon_content_description">Грешка</string>

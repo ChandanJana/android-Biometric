@@ -47,6 +47,7 @@
     <string name="character_counter_content_description">入力済み文字数: %1$d/%2$d</string>
     <string name="character_counter_overflowed_content_description">文字数制限を超えています（%1$d/%2$d 文字）</string>
     <string name="clear_text_end_icon_content_description">テキストを消去</string>
+    <string name="common_google_play_services_unknown_issue">「%1$s」で Google Play 開発者サービスに問題が発生しています。もう一度お試しください。</string>
     <string msgid="4296851028928624518" name="confirm_device_credential_password">"パスワードを使用"</string>
     <string msgid="7497355367608150274" name="default_error_msg">"不明なエラーです"</string>
     <string name="error_icon_content_description">エラー</string>

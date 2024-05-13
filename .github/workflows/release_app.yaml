@@ -76,6 +76,35 @@ jobs:
           name: unit_test_report
           path: app/build/reports/tests/testDebugUnitTest/
 
+  instrumentation-test:
+    needs: [ unit-test ]
+    runs-on: macos-latest
+    name: 🧪 Instrumentation Tests
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'adopt'
+          java-version: '18'
+
+      - name: Grant execute permissions to Gradle wrapper
+        run: chmod +x ./gradlew
+
+      - name: Run espresso tests
+        uses: reactivecircus/android-emulator-runner@v4
+        with:
+          api-level: 24
+          script: ./gradlew connectedCheck
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v4
+        with:
+          name: instrumentation_test_report
+          path: app/build/reports/androidTests/connected/
+
   generate-apk:
     #needs: [ unit-test ]
     runs-on: ubuntu-latest

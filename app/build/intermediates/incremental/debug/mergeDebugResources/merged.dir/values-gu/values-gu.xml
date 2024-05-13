@@ -47,6 +47,7 @@
     <string name="character_counter_content_description">%2$dમાંથી %1$d અક્ષરો દાખલ કર્યા</string>
     <string name="character_counter_overflowed_content_description">%2$dમાંથી %1$dની વર્ણ મર્યાદા ઓળંગાઈ ગઈ છે</string>
     <string name="clear_text_end_icon_content_description">ટેક્સ્ટ સાફ કરો</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ને Google Play સેવાઓમાં મુશ્કેલી આવી રહી છે. કૃપા કરીને ફરી પ્રયાસ કરો.</string>
     <string msgid="4296851028928624518" name="confirm_device_credential_password">"પાસવર્ડનો ઉપયોગ કરો"</string>
     <string msgid="7497355367608150274" name="default_error_msg">"અજાણી ભૂલ"</string>
     <string name="error_icon_content_description">ભૂલ</string>

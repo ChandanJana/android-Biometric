@@ -47,6 +47,7 @@
     <string name="character_counter_content_description">%2$d वर्णों में से %1$d वर्ण दर्ज किए गए</string>
     <string name="character_counter_overflowed_content_description">अभी %1$d वर्ण हैं जबकि %2$d से ज़्यादा नहीं होने चाहिए</string>
     <string name="clear_text_end_icon_content_description">टेक्स्ट मिटाएं</string>
+    <string name="common_google_play_services_unknown_issue">%1$s को Google Play सेवाओं के साथ समस्या आ रही है. कृपया फिर से कोशिश करें.</string>
     <string msgid="4296851028928624518" name="confirm_device_credential_password">"पासवर्ड का इस्तेमाल करें"</string>
     <string msgid="7497355367608150274" name="default_error_msg">"अनजान गड़बड़ी"</string>
     <string name="error_icon_content_description">गड़बड़ी</string>

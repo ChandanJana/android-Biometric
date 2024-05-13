@@ -1,0 +1,2 @@
+05-13 14:27:35.283  8705  8860 I TestRunner: started: useAppContext(com.biomatricapplication.ExampleInstrumentedTest)
+05-13 14:27:35.309  8705  8860 I TestRunner: finished: useAppContext(com.biomatricapplication.ExampleInstrumentedTest)

@@ -49,6 +49,7 @@
     <string name="character_counter_content_description">Število vnesenih znakov je %1$d od %2$d</string>
     <string name="character_counter_overflowed_content_description">Omejitev števila znakov je presegla %1$d od %2$d</string>
     <string name="clear_text_end_icon_content_description">Izbris besedila</string>
+    <string name="common_google_play_services_unknown_issue">Aplikacija %1$s ima težave s storitvami Google Play. Poskusite znova.</string>
     <string msgid="4296851028928624518" name="confirm_device_credential_password">"Uporaba gesla"</string>
     <string msgid="7497355367608150274" name="default_error_msg">"Neznana napaka"</string>
     <string name="error_icon_content_description">Napaka</string>

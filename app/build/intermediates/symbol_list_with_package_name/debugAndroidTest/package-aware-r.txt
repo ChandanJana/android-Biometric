@@ -1,0 +1,3 @@
+com.biomatricapplication.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

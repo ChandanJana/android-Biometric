@@ -32,3 +32,7 @@ A
 app/playstore.jks,2\f\2fe6aa49106dd35626064623b4a44962acbb3b34
 R
 ".github/workflows/release_app.yaml,b\9\b9e00d5c4d35fe8923bbca3c4888827adcd0706b
+@
+build.gradle.kts,d\b\dbcff70658daf80b53ce624f6adcaa529df5ed8d
+H
+app/google-services.json,f\d\fd8d34b142d02ec743a8efefefd2c097961666e9

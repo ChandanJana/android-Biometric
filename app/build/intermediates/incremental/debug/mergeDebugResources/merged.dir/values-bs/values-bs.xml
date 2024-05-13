@@ -48,6 +48,7 @@
     <string name="character_counter_content_description">Uneseno znakova: %1$d od %2$d</string>
     <string name="character_counter_overflowed_content_description">Ograničenje broja znakova premašuje %1$d od %2$d</string>
     <string name="clear_text_end_icon_content_description">Obriši tekst</string>
+    <string name="common_google_play_services_unknown_issue">Aplikacija %1$s ima problema s Google Play uslugama. Pokušajte ponovo.</string>
     <string msgid="4296851028928624518" name="confirm_device_credential_password">"Koristi lozinku"</string>
     <string msgid="7497355367608150274" name="default_error_msg">"Nepoznata greška"</string>
     <string name="error_icon_content_description">Greška</string>

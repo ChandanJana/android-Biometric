@@ -47,6 +47,7 @@
     <string name="character_counter_content_description">Du har brugt %1$d ud af %2$d tegn</string>
     <string name="character_counter_overflowed_content_description">Du har brugt %1$d tegn og dermed overskredet tegnbegrænsningen på %2$d.</string>
     <string name="clear_text_end_icon_content_description">Ryd tekst</string>
+    <string name="common_google_play_services_unknown_issue">%1$s har problemer med Google Play-tjenester. Prøv igen.</string>
     <string msgid="4296851028928624518" name="confirm_device_credential_password">"Brug adgangskode"</string>
     <string msgid="7497355367608150274" name="default_error_msg">"Ukendt fejl"</string>
     <string name="error_icon_content_description">Fejl</string>

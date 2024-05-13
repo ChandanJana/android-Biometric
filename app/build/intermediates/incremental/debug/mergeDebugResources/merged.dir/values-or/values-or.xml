@@ -47,6 +47,7 @@
     <string name="character_counter_content_description">%2$d ର %1$d ଅକ୍ଷର ଲେଖିଛନ୍ତି</string>
     <string name="character_counter_overflowed_content_description">%2$d ର %1$d ଅକ୍ଷର ଲେଖିଛନ୍ତି</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="common_google_play_services_unknown_issue">%1$sର Google Play ସେବା ସହ ଏକ ସମସ୍ୟା ରହିଛି। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string msgid="4296851028928624518" name="confirm_device_credential_password">"ପାସ୍‌ୱାର୍ଡ୍ ବ୍ୟବହାର କରନ୍ତୁ"</string>
     <string msgid="7497355367608150274" name="default_error_msg">"ଅଜଣା ତ୍ରୁଟି"</string>
     <string name="error_icon_content_description">Error</string>

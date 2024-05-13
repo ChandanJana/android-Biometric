@@ -18,145 +18,270 @@
 15-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:9:5-74
 15-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:9:22-71
 16
-17    <permission
-17-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\d1e4a685b1001794fbcfe4ee9c157a7e\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
-18        android:name="com.biomatricapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-18-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\d1e4a685b1001794fbcfe4ee9c157a7e\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
-19        android:protectionLevel="signature" />
-19-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\d1e4a685b1001794fbcfe4ee9c157a7e\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
-20
-21    <uses-permission android:name="com.biomatricapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-21-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\d1e4a685b1001794fbcfe4ee9c157a7e\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
-21-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\d1e4a685b1001794fbcfe4ee9c157a7e\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
-22
-23    <application
-23-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:11:5-31:19
-24        android:allowBackup="true"
-24-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:12:9-35
-25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-25-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\d1e4a685b1001794fbcfe4ee9c157a7e\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
-26        android:dataExtractionRules="@xml/data_extraction_rules"
-26-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:13:9-65
-27        android:debuggable="true"
-28        android:extractNativeLibs="false"
-29        android:fullBackupContent="@xml/backup_rules"
-29-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:14:9-54
-30        android:icon="@mipmap/ic_launcher"
-30-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:15:9-43
-31        android:label="@string/app_name"
-31-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:16:9-41
-32        android:roundIcon="@mipmap/ic_launcher_round"
-32-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:17:9-54
-33        android:supportsRtl="true"
-33-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:18:9-35
-34        android:theme="@style/Theme.BiomatricApplication" >
-34-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:19:9-58
-35        <activity
-35-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:21:9-30:20
-36            android:name="com.biomatricapplication.MainActivity"
-36-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:22:13-41
-37            android:exported="true"
-37-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:23:13-36
-38            android:label="@string/app_name" >
-38-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:24:13-45
-39            <intent-filter>
-39-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:25:13-29:29
-40                <action android:name="android.intent.action.MAIN" />
-40-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:26:17-69
-40-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:26:25-66
-41
-42                <category android:name="android.intent.category.LAUNCHER" />
-42-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:28:17-77
-42-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:28:27-74
-43            </intent-filter>
-44        </activity>
-45        <activity
-45-->[androidx.biometric:biometric:1.0.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\4c85cbd4a542790a1dee0aef33084cfc\transformed\biometric-1.0.1\AndroidManifest.xml:28:9-31:67
-46            android:name="androidx.biometric.DeviceCredentialHandlerActivity"
-46-->[androidx.biometric:biometric:1.0.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\4c85cbd4a542790a1dee0aef33084cfc\transformed\biometric-1.0.1\AndroidManifest.xml:29:13-78
-47            android:exported="true"
-47-->[androidx.biometric:biometric:1.0.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\4c85cbd4a542790a1dee0aef33084cfc\transformed\biometric-1.0.1\AndroidManifest.xml:30:13-36
-48            android:theme="@style/DeviceCredentialHandlerTheme" />
-48-->[androidx.biometric:biometric:1.0.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\4c85cbd4a542790a1dee0aef33084cfc\transformed\biometric-1.0.1\AndroidManifest.xml:31:13-64
-49
-50        <provider
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-51            android:name="androidx.startup.InitializationProvider"
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-52            android:authorities="com.biomatricapplication.androidx-startup"
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-53            android:exported="false" >
-53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-54            <meta-data
-54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-55                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-56                android:value="androidx.startup" />
-56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\9dba3473c2e7ab91e493b9371a42d8d3\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-57            <meta-data
-57-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\f96262b739e7235dd07a97d871a1b1da\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-58                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-58-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\f96262b739e7235dd07a97d871a1b1da\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-59                android:value="androidx.startup" />
-59-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\f96262b739e7235dd07a97d871a1b1da\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-60            <meta-data
-60-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-61                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-61-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-62                android:value="androidx.startup" />
-62-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-63        </provider>
-64
-65        <uses-library
-65-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\108abe6471b017e5481657b16c1015d6\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-66            android:name="androidx.window.extensions"
-66-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\108abe6471b017e5481657b16c1015d6\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-67            android:required="false" />
-67-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\108abe6471b017e5481657b16c1015d6\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-68        <uses-library
-68-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\108abe6471b017e5481657b16c1015d6\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-69            android:name="androidx.window.sidecar"
-69-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\108abe6471b017e5481657b16c1015d6\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-70            android:required="false" />
-70-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\108abe6471b017e5481657b16c1015d6\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-71
-72        <receiver
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-73            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-74            android:directBootAware="false"
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-75            android:enabled="true"
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-76            android:exported="true"
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-77            android:permission="android.permission.DUMP" >
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-78            <intent-filter>
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-79                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-80            </intent-filter>
-81            <intent-filter>
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-82                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-83            </intent-filter>
-84            <intent-filter>
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-85                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-86            </intent-filter>
-87            <intent-filter>
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-88                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\ee77c6148e535550acd02ec4a55fcb7f\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-89            </intent-filter>
-90        </receiver>
-91    </application>
-92
-93</manifest>
+17    <!-- Required permission for App measurement to run. -->
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:23:5-67
+18-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:23:22-64
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:24:5-79
+19-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:24:22-76
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:25:5-68
+20-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:25:22-65
+21    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+21-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:26:5-110
+21-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:26:22-107
+22    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+22-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:25:5-79
+22-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:25:22-76
+23    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+23-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:26:5-88
+23-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:26:22-85
+24    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+24-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:27:5-82
+24-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:27:22-79
+25
+26    <permission
+26-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\0cc4489cf7b51284b1d12fcaf221342e\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+27        android:name="com.biomatricapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+27-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\0cc4489cf7b51284b1d12fcaf221342e\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+28        android:protectionLevel="signature" />
+28-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\0cc4489cf7b51284b1d12fcaf221342e\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+29
+30    <uses-permission android:name="com.biomatricapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+30-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\0cc4489cf7b51284b1d12fcaf221342e\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+30-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\0cc4489cf7b51284b1d12fcaf221342e\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+31
+32    <application
+32-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:11:5-31:19
+33        android:allowBackup="true"
+33-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:12:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.12.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\0cc4489cf7b51284b1d12fcaf221342e\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+35        android:dataExtractionRules="@xml/data_extraction_rules"
+35-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:13:9-65
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:fullBackupContent="@xml/backup_rules"
+38-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:14:9-54
+39        android:icon="@mipmap/ic_launcher"
+39-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:15:9-43
+40        android:label="@string/app_name"
+40-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:16:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:17:9-54
+42        android:supportsRtl="true"
+42-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:18:9-35
+43        android:theme="@style/Theme.BiomatricApplication" >
+43-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:19:9-58
+44        <activity
+44-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:21:9-30:20
+45            android:name="com.biomatricapplication.MainActivity"
+45-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:22:13-41
+46            android:exported="true"
+46-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:23:13-36
+47            android:label="@string/app_name" >
+47-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:24:13-45
+48            <intent-filter>
+48-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:25:13-29:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:26:17-69
+49-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:26:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:28:17-77
+51-->C:\Users\Chandan.Jana\AndroidStudioProjects\android-Biometric\app\src\main\AndroidManifest.xml:28:27-74
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->[androidx.biometric:biometric:1.0.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\45339aa9ce44711ae4742aef6e97acc8\transformed\biometric-1.0.1\AndroidManifest.xml:28:9-31:67
+55            android:name="androidx.biometric.DeviceCredentialHandlerActivity"
+55-->[androidx.biometric:biometric:1.0.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\45339aa9ce44711ae4742aef6e97acc8\transformed\biometric-1.0.1\AndroidManifest.xml:29:13-78
+56            android:exported="true"
+56-->[androidx.biometric:biometric:1.0.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\45339aa9ce44711ae4742aef6e97acc8\transformed\biometric-1.0.1\AndroidManifest.xml:30:13-36
+57            android:theme="@style/DeviceCredentialHandlerTheme" />
+57-->[androidx.biometric:biometric:1.0.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\45339aa9ce44711ae4742aef6e97acc8\transformed\biometric-1.0.1\AndroidManifest.xml:31:13-64
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+61            android:authorities="com.biomatricapplication.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\2903b5c9feeda4495d036174d9842319\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\8926e18eed512909b9bac1667217c25c\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\8926e18eed512909b9bac1667217c25c\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\8926e18eed512909b9bac1667217c25c\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+71                android:value="androidx.startup" />
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+72        </provider>
+73
+74        <receiver
+74-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:29:9-33:20
+75            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+75-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:30:13-85
+76            android:enabled="true"
+76-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:31:13-35
+77            android:exported="false" >
+77-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:32:13-37
+78        </receiver>
+79
+80        <service
+80-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:35:9-38:40
+81            android:name="com.google.android.gms.measurement.AppMeasurementService"
+81-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:36:13-84
+82            android:enabled="true"
+82-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:37:13-35
+83            android:exported="false" />
+83-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:38:13-37
+84        <service
+84-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:39:9-43:72
+85            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+85-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:40:13-87
+86            android:enabled="true"
+86-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:41:13-35
+87            android:exported="false"
+87-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:42:13-37
+88            android:permission="android.permission.BIND_JOB_SERVICE" />
+88-->[com.google.android.gms:play-services-measurement:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\03ddccb21fbe68c31d646d972d456fc3\transformed\play-services-measurement-22.0.0\AndroidManifest.xml:43:13-69
+89
+90        <property
+90-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:30:9-32:61
+91            android:name="android.adservices.AD_SERVICES_CONFIG"
+91-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:31:13-65
+92            android:resource="@xml/ga_ad_services_config" />
+92-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:32:13-58
+93
+94        <service
+94-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:34:9-40:19
+95            android:name="com.google.firebase.components.ComponentDiscoveryService"
+95-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:35:13-84
+96            android:directBootAware="true"
+96-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+97            android:exported="false" >
+97-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:36:13-37
+98            <meta-data
+98-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:37:13-39:85
+99                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+99-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:38:17-139
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\c02cd3d9653390c3ff6a966619afa1f9\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:39:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\959a74b3599d67c1d698c176232a9d9e\transformed\firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+102                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+102-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\959a74b3599d67c1d698c176232a9d9e\transformed\firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\959a74b3599d67c1d698c176232a9d9e\transformed\firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\959a74b3599d67c1d698c176232a9d9e\transformed\firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+105                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+105-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\959a74b3599d67c1d698c176232a9d9e\transformed\firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\959a74b3599d67c1d698c176232a9d9e\transformed\firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+108                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+108-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\2e23c4afaac70a508024f05ddd4813d8\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+111                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+111-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+113        </service>
+114
+115        <provider
+115-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+116            android:name="com.google.firebase.provider.FirebaseInitProvider"
+116-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+117            android:authorities="com.biomatricapplication.firebaseinitprovider"
+117-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+118            android:directBootAware="true"
+118-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+119            android:exported="false"
+119-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+120            android:initOrder="100" />
+120-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\200b44684533de111747a9c802a435d0\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+121
+122        <uses-library
+122-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\58b5c3e336e48c840d5ed0fe5c696790\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+123            android:name="android.ext.adservices"
+123-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\58b5c3e336e48c840d5ed0fe5c696790\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+124            android:required="false" />
+124-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\58b5c3e336e48c840d5ed0fe5c696790\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+125        <uses-library
+125-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\b923a44da5de6dd7faa3ed9cf6dd0fb9\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+126            android:name="androidx.window.extensions"
+126-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\b923a44da5de6dd7faa3ed9cf6dd0fb9\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+127            android:required="false" />
+127-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\b923a44da5de6dd7faa3ed9cf6dd0fb9\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+128        <uses-library
+128-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\b923a44da5de6dd7faa3ed9cf6dd0fb9\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+129            android:name="androidx.window.sidecar"
+129-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\b923a44da5de6dd7faa3ed9cf6dd0fb9\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+130            android:required="false" />
+130-->[androidx.window:window:1.0.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\b923a44da5de6dd7faa3ed9cf6dd0fb9\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+131
+132        <meta-data
+132-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\0cfa5d72e929f6a292f89310e217eda3\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+133            android:name="com.google.android.gms.version"
+133-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\0cfa5d72e929f6a292f89310e217eda3\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+134            android:value="@integer/google_play_services_version" />
+134-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\0cfa5d72e929f6a292f89310e217eda3\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+135
+136        <receiver
+136-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+137            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+138            android:directBootAware="false"
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+139            android:enabled="true"
+139-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+140            android:exported="true"
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+141            android:permission="android.permission.DUMP" >
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+142            <intent-filter>
+142-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+143                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+144            </intent-filter>
+145            <intent-filter>
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+146                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+147            </intent-filter>
+148            <intent-filter>
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+149                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+150            </intent-filter>
+151            <intent-filter>
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+152                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Chandan.Jana\.gradle\caches\transforms-3\049b32537d18db14e9710410c893ce61\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+153            </intent-filter>
+154        </receiver>
+155    </application>
+156
+157</manifest>

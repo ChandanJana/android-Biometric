@@ -47,6 +47,7 @@
     <string name="character_counter_content_description">Sisestatud tähemärgid: %1$d/%2$d</string>
     <string name="character_counter_overflowed_content_description">Tähemärgipiirang on ületatud: %1$d/%2$d</string>
     <string name="clear_text_end_icon_content_description">Kustuta tekst</string>
+    <string name="common_google_play_services_unknown_issue">Rakendusel %1$s on probleeme Google Play teenustega. Proovige uuesti.</string>
     <string msgid="4296851028928624518" name="confirm_device_credential_password">"Kasuta parooli"</string>
     <string msgid="7497355367608150274" name="default_error_msg">"Tundmatu viga"</string>
     <string name="error_icon_content_description">Viga</string>

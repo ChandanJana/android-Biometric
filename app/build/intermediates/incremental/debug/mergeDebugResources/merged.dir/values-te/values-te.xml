@@ -47,6 +47,7 @@
     <string name="character_counter_content_description">%2$dలో %1$d అక్షరాలు నమోదు చేయబడ్డాయి</string>
     <string name="character_counter_overflowed_content_description">అక్షర పరిధి %2$dలో %1$dను అధిగమించింది</string>
     <string name="clear_text_end_icon_content_description">రాసినదాన్ని తీసివేయండి</string>
+    <string name="common_google_play_services_unknown_issue">%1$s Google Play సేవలతో సమస్య కలిగి ఉంది. దయచేసి మళ్లీ ట్రై చేయండి.</string>
     <string msgid="4296851028928624518" name="confirm_device_credential_password">"పాస్‌వర్డ్‌ను ఉపయోగించు"</string>
     <string msgid="7497355367608150274" name="default_error_msg">"తెలియని ఎర్రర్"</string>
     <string name="error_icon_content_description">ఎర్రర్</string>
