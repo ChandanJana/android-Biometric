@@ -58,12 +58,6 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v4
 
-      - name: Set up JDK
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'adopt'
-          java-version: '18'
-
       - name: Grant execute permissions to Gradle wrapper
         run: chmod +x ./gradlew
 
