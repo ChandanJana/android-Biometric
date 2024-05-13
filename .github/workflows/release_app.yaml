@@ -9,8 +9,36 @@ on:
       - main
 
 jobs:
+
+  build: # defines a job called build
+    name: 🔨 Build # [optional] name of the job
+    runs-on: ubuntu-latest # the job will be executed on ubuntu runner. Other include: Microsoft Windows & MacOS runners
+    steps: # groups together all the steps that run in build job
+
+      # Checks out code from the VCS to the runner
+      - name: Checkout code # [optional] specifies the name of the step
+        uses: actions/checkout@v4 # specifies which action and version to execute ie. checkout@v2
+
+      # Setup JDK Version 11 in the runner
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'adopt'
+          java-version: '18'
+
+      # Allow permissions to make gradle executable - This can removed by adding the gradlew file permission
+      # directly into the repository using `git update-index --chmod=+x gradlew`
+      # - name: Make gradle executable
+      #  run: chmod +x ./gradlew
+
+      # Execute gradle build command with stacktrace flag
+      - name: Build with gradle
+        run: ./gradlew build --stacktrace # Execute gradle script to build project
+
   lint:
+    needs: [ build ]
     runs-on: ubuntu-latest
+    name: 🔍 Lint
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
@@ -24,6 +52,7 @@ jobs:
   unit-test:
     needs: [ lint ]
     runs-on: ubuntu-latest
+    name: 🧪 Unit Tests
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
@@ -46,9 +75,10 @@ jobs:
           name: unit_test_report
           path: app/build/reports/tests/testDebugUnitTest/
 
-  build:
+  generate-apk:
+    #needs: [ unit-test ]
     runs-on: ubuntu-latest
-
+    name: ⚙️ Generate APK
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
