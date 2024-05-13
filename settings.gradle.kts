@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Biomatric Application"
+rootProject.name = "Biometric Application"
 include(":app")
  

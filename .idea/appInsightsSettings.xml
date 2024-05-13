@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.biomatricapplication" />
+                  <option name="mobileSdkAppId" value="1:298242984637:android:dc3754632be036d95405d4" />
+                  <option name="projectId" value="biomatrictest-f7ea5" />
+                  <option name="projectNumber" value="298242984637" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

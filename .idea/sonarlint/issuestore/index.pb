@@ -36,3 +36,5 @@ R
 build.gradle.kts,d\b\dbcff70658daf80b53ce624f6adcaa529df5ed8d
 H
 app/google-services.json,f\d\fd8d34b142d02ec743a8efefefd2c097961666e9
+C
+settings.gradle.kts,7\4\749edfcc96398253e5b3416184e95c46621da850

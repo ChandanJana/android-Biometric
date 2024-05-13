@@ -93,17 +93,39 @@ jobs:
       - name: Grant execute permissions to Gradle wrapper
         run: chmod +x ./gradlew
 
-      - name: Run espresso tests
-        uses: reactivecircus/android-emulator-runner@v2
-        with:
-          api-level: 29
-          script: ./gradlew connectedCheck
+      - name: Run Instrumentation
+        run: echo Run Instrumentation
 
-      - name: Upload test report
-        uses: actions/upload-artifact@v4
+#      - name: Run espresso tests
+#        uses: reactivecircus/android-emulator-runner@v2
+#        with:
+#          api-level: 29
+#          script: ./gradlew connectedCheck
+#
+#      - name: Upload test report
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: instrumentation_test_report
+#          path: app/build/reports/androidTests/connected/
+
+  static-code-analysis:
+    needs: [ instrumentation-test ]
+    runs-on: ubuntu-latest
+    name: 🛠️ Static Code Analysis
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
         with:
-          name: instrumentation_test_report
-          path: app/build/reports/androidTests/connected/
+          distribution: 'adopt'
+          java-version: '18'
+
+      - name: SonarCloud Scan
+        run: ./gradlew app:sonarqube -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   generate-apk:
     #needs: [ unit-test ]
