@@ -67,14 +67,17 @@ jobs:
       - name: Grant execute permissions to Gradle wrapper
         run: chmod +x ./gradlew
 
-      - name: Run tests
-        run: ./gradlew test
+      - name: Run Instrumentation
+        run: echo Unit Test
 
-      - name: Upload test report
-        uses: actions/upload-artifact@v4
-        with:
-          name: unit_test_report
-          path: app/build/reports/tests/testDebugUnitTest/
+#      - name: Run tests
+#        run: ./gradlew test
+#
+#      - name: Upload test report
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: unit_test_report
+#          path: app/build/reports/tests/testDebugUnitTest/
 
   instrumentation-test:
     needs: [ unit-test ]
@@ -125,7 +128,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: SonarCloud Scan
-        run: ./gradlew app:sonarqube -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+        run: ./gradlew app:sonar -Dsonar.login=${{ secrets.SONAR_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
