@@ -121,6 +121,8 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '18'
+      - name: Grant execute permissions to Gradle wrapper
+        run: chmod +x ./gradlew
 
       - name: SonarCloud Scan
         run: ./gradlew app:sonarqube -Dsonar.login=${{ secrets.SONAR_TOKEN }}
