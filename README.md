@@ -18,3 +18,25 @@ BIOMETRIC_ERROR_NO_HARDWARE: There is no biometric hardware.
 BIOMETRIC_SUCCESS: No error detected, It means we can use the biometric for validation without any worry.
 
 If we want to have the PromptInfo with PIN, Device credential allowed we need to setDeviceCredentialAllowed(true).
+
+How to get FIREBASE_TOKEN 
+
+To obtain a Firebase authentication token (often referred to as a Firebase token or Firebase CI token) for use in CI/CD workflows, you typically generate it using the Firebase CLI.
+
+Here are the steps to obtain a Firebase token:
+
+Install Firebase CLI: If you haven't already installed the Firebase CLI, you can do so by running the following command in your terminal:
+
+npm install -g firebase-tools
+
+Login to Firebase: Once the Firebase CLI is installed, log in to Firebase by running:
+
+firebase login:ci
+
+This command initiates the login process and prompts you to authenticate with your Google account. Follow the instructions in your terminal to complete the authentication process.
+
+Generate Firebase Token: After successfully logging in, the Firebase CLI generates a Firebase authentication token (also known as a Firebase CI token) and prints it to the terminal. It will look something like this:
+
+[2022-05-04T15:45:30.123Z] Successfully obtained Firebase CLI token: <YOUR_FIREBASE_TOKEN>
+
+Copy the <YOUR_FIREBASE_TOKEN> value. This is your Firebase authentication token.
