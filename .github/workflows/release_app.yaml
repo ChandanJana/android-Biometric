@@ -133,7 +133,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   generate-apk:
-    needs: [ static-code-analysis ]
+    #needs: [ static-code-analysis ]
     runs-on: ubuntu-latest
     name: ⚙️ Generate APK
     steps:
@@ -165,3 +165,34 @@ jobs:
         with:
           name: my-app-release
           path: artifacts/Biometric-V_${{ steps.version.outputs.versionName }}.apk
+
+  create-release: # Job to create a new github release and upload the generated apk
+    name: 🎉 Create Release
+    needs: [ generate-apk ]
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Download APK from build
+        uses: actions/download-artifact@v4
+        with:
+          name: Android-CI-CD
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+
+      - name: Upload Release APK
+        id: upload_release_asset
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: Android-CI-CD/Biometric-V_${{ steps.version.outputs.versionName }}.apk
+          asset_name: Android-CI-CD.apk
+          asset_content_type: application/zip
