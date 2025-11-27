@@ -40,3 +40,25 @@ Generate Firebase Token: After successfully logging in, the Firebase CLI generat
 [2022-05-04T15:45:30.123Z] Successfully obtained Firebase CLI token: <YOUR_FIREBASE_TOKEN>
 
 Copy the <YOUR_FIREBASE_TOKEN> value. This is your Firebase authentication token.
+
+All the script meaning
+
+name : The name of the workflow as it will appear in the “Actions” tab of the GitHub repository. Like here it is “Android CI”
+
+on: Specifies the trigger for this workflow. So here the workflow will be triggered when there is a push event in “main” branch and pull_request event in “main” branch
+
+jobs: A workflow job is a set of steps that execute on the same runner. We can have multiple jobs in a single workflow yml file. Groups together all the jobs that run in the Android CI workflow. Here, in the example there is a single job whose name is build
+
+runs-on: Configures the job to run on the latest version of an Ubuntu Linux runner. This means that the job will execute on a fresh virtual machine hosted by GitHub. You can use windows and macOS runner too.
+
+steps: Groups together all the steps that run in the build job. Each item nested under this section is a separate action or shell script.
+
+uses: actions/checkout@v3 : The uses keyword specifies that this step will run v3 of the actions/checkout action. This is an action that checks out your repository onto the runner, allowing you to run scripts or other actions against your code (such as build and test tools). You should use the checkout action any time your workflow will run against the repository's code.
+
+uses: actions/setup-java@v3 : This step uses the actions/setup-java@v3 action to install the specified version of the JDK (this example uses v11) of distribution: 'temurin'
+
+run: chmod +x gradlew: The run keyword tells the job to execute a command on the runner. In this case, you are granting execute permission for gradlew
+
+run: ./gradlew build: In this case you are building the code using gradle
+
+After this , Click on Start Commit and add comment and click Commit. This will create a basic android CI workflow in GitHub Action.
